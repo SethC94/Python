@@ -70,3 +70,24 @@ If you look at [in_not_in.py](https://github.com/SethC94/Python/tree/master/cour
 Arithmetic operators take precedence over logical operators. Python will always evaluate the arithmetic operators first (*** is highest, then multiplication/division, then addition/subtraction). Next comes the relational operators. Finally, the logical operators are done last. This means that the expression x*5 >= 10 and y-6 <= 20 will be evaluated so as to first perform the arithmetic and then check the relationships. The and will be done last. Many programmers might place parentheses around the two relational expressions, (x*5 >= 10) and (y-6 <= 20). It is not necessary to do so, but causes no harm and may make it easier for people to read and understand the code.
 
 The following table summarizes the operator precedence from highest to lowest. A complete table for the entire language can be found in the [Python Documentation](http://docs.python.org/py3k/reference/expressions.html#expression-lists).
+
+Example: [Logical Operators](https://github.com/SethC94/Python/tree/master/coursera/python_basics_01/week_3/logical_operators.py)
+
+#### 8.6. Conditional Execution: Binary Selection
+
+In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Selection statements, sometimes also referred to as conditional statements, give us this ability. The simplest form of selection is the if statement. This is sometimes referred to as binary selection since there are two possible paths of execution.
+
+Example: [Conditional Execution](https://github.com/SethC94/Python/tree/master/coursera/python_basics_01/week_3/conditional_execution.py)
+
+#### 8.7. Omitting the else Clause: Unary Selection
+
+Another form of the if statement is one in which the else clause is omitted entirely. This creates what is sometimes called **unary selection**. In this case, when the condition evaluates to True, the statements are executed. Otherwise the flow of execution continues to the statement after the body of the if.
+
+### 8.8. Nested conditionals
+
+One conditional can also be nested within another. For example, assume we have two integer variables, x and y. The following pattern of selection shows how we might decide how they are related to each other.
+
+#### 8.9. Chained conditionals
+Python provides an alternative way to write nested selection such as the one shown in the previous section. This is sometimes referred to as a chained conditional.
+
+_elif_ is an abbreviation of else if. Again, exactly one branch will be executed. There is no limit of the number of elif statements but only a single (and optional) final else statement is allowed and it must be the last branch in the statement.
